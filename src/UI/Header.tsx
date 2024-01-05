@@ -1,16 +1,11 @@
-import React, { Dispatch, SetStateAction } from "react";
-import { FaChartPie, FaSearch } from "react-icons/fa";
+import { Dispatch, SetStateAction } from "react";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
-import { ImExit } from "react-icons/im";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 
 import avatar from "../assets/prof-picture.jpg";
 import { useStatistics } from "../contexts/StatisticsContext";
-import logo from "../assets/logo-round1.png";
-import { NavLink, useMatch } from "react-router-dom";
-import { IoStatsChart } from "react-icons/io5";
-import { GoGraph } from "react-icons/go";
+import { useMatch } from "react-router-dom";
 
 export const Header = ({
   darkMode,
@@ -28,7 +23,7 @@ export const Header = ({
   const graphPath = useMatch("/graphs");
   const chartPath = useMatch("/charts");
 
-  function handleChange(e) {
+  function handleChange(e: any) {
     dispatch && dispatch({ type: "filterBy", payload: e.target.value });
   }
   return (

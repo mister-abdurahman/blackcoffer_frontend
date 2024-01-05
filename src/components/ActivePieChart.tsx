@@ -8,7 +8,7 @@ import { PieChart, Pie, Sector, ResponsiveContainer } from "recharts";
 //   { name: "Group D", intensity: 200 },
 // ];
 
-const RenderActiveShape = (props) => {
+const RenderActiveShape = (props: any) => {
   const RADIAN = Math.PI / 180;
   const {
     cx,
@@ -90,7 +90,7 @@ export const ActivePieChart = ({
 }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  function onPieEnter(_, index: number) {
+  function onPieEnter(_: string, index: number) {
     setActiveIndex(index);
     //   this.setState({
     //     activeIndex: index,

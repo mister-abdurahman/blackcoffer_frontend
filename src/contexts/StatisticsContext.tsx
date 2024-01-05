@@ -26,16 +26,16 @@ export interface contextType {
   status?: string;
   dispatch?: Function;
   totalStatsNum?: number;
-  intensity?: { _id: string; intensity: number; published: string }[];
-  likelihood?: { _id: string; likelihood: number; published: string }[];
-  relevance?: { _id: string; relevance: number; published: string }[];
-  endYear?: { _id: string; intensity: number; end_year: string }[];
-  country?: { _id: string; intensity: number; country: string }[];
-  topics?: { _id: string; relevance: number; topic: string }[];
-  region?: { _id: string; intensity: number; region: string }[];
-  sector?: { _id: string; intensity: number; sector: string }[];
-  pestle?: { _id: string; relevance: number; pestle: string }[];
-  source?: { _id: string; relevance: number; source: string }[];
+  intensity: { intensity: number; published: string }[];
+  likelihood: { likelihood: number; published: string }[];
+  relevance: { relevance: number; published: string }[];
+  endYear: { intensity: number; end_year: string }[];
+  country: { intensity: number; country: string; likelihood: number }[];
+  topics: { relevance: number; topic: string }[];
+  region: { intensity: number; region: string }[];
+  sector: { intensity: number; sector: string; relevance: number }[];
+  pestle: { relevance: number; pestle: string }[];
+  source: { relevance: number; source: string; intensity: number }[];
   filterBy?: string;
 }
 
