@@ -31,7 +31,7 @@ export const Sidebar = ({ toggleBar }: { toggleBar: boolean }) => {
         >
           Stats. Board
         </p>
-        <div className="md:ml-auto ml-0">
+        <div className="hidden md:block md:ml-auto ml-0">
           {slimBar ? (
             <FaArrowAltCircleRight
               className="fill-purple-700 dark:fill-purple-200 cursor-pointer"

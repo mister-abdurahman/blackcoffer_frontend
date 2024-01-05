@@ -60,7 +60,7 @@ export const Header = ({
           <option value="source">Source</option>
           <option value="country">Country</option>
         </select>
-        <span className="hidden md:inline text-[.6rem] ml-2">
+        <span className="hidden md:inline text-[.6rem] ml-2 dark:text-white">
           (works only on dashboard as requested)
         </span>
       </div>
